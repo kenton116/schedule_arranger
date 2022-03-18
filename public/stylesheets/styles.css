@@ -1,6 +1,11 @@
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
   background-color: rgb(255, 230, 180);
+}
+
+nav {
+  background-color: rgb(255, 245, 220);
 }
 
 .jumbotron {
