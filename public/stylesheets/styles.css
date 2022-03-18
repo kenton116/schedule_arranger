@@ -11,3 +11,10 @@ nav {
 .jumbotron {
   background-color: rgb(255, 195, 85);
 }
+
+table {
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
