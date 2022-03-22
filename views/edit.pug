@@ -6,10 +6,10 @@ block content
     input(type="hidden" name="_csrf" value!=csrfToken)
     div.form-group
       label(for="scheduleName") 予定名
-      input(type="text" name="scheduleName" value=schedule.scheduleName)#scheduleName.form-control
+      input(type="text" name="scheduleName" value=schedule.scheduleName required)#scheduleName.form-control
     div.form-group
       label(for="memo") メモ
-      textarea(name="memo")#memo.form-control #{schedule.memo}
+      textarea(name="memo" required)#memo.form-control #{schedule.memo}
     div.form-group
       label 既存の日程候補
       table.table.table-striped.table-hover
@@ -17,7 +17,7 @@ block content
           tr 
             td #{candidate.candidateName}
       label(for="candidates").my-2 候補日程の追加 (改行して複数入力してください)
-      textarea(name="candidates")#candidates.form-control
+      textarea(name="candidates" required)#candidates.form-control
     div
       button(type="submit").btn.btn-info 以上の内容で予定を編集する
   h3.my-3 危険な変更
